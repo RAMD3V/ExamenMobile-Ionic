@@ -1,0 +1,30 @@
+<div id="todo">
+  <ion-header [translucent]="true">
+    <ion-toolbar>
+      <ion-title>
+        Inicio
+      </ion-title>
+    </ion-toolbar>
+  </ion-header>
+  
+  <ion-content [fullscreen]="true">
+    <div id="container">
+      <br>
+      <ion-title>Agrega tu canción favorita a la lista</ion-title>>
+      <form [formGroup]="musicaLista" (ngSubmit)="guardarc()">
+        <ion-label>Nombre de la Canción</ion-label>
+        <ion-input placeholder="Nombre de la Canción" formControlName="nombre"></ion-input>
+        <ion-label>Artista</ion-label>
+        <ion-input placeholder="Artista" formControlName="artista"></ion-input>
+        <ion-label>Género</ion-label>
+        <ion-input placeholder="Género" formControlName="genero"></ion-input>
+        <ion-label>Año</ion-label>
+        <ion-input placeholder="Año" formControlName="year"></ion-input>
+        <ion-button type="submit">Guardar Canción</ion-button>
+      </form>
+      <br>
+      <ion-button [routerLink]="['/lista']">Música Guardada</ion-button>
+      <br><br>
+    </div>        
+  </ion-content>
+</div>

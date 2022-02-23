@@ -1,0 +1,27 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Lista de Música</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-button [routerLink]="['/home']"> Guardada màs Musica</ion-button>
+  <ion-title>Mí música</ion-title>
+  <table class="table">
+    <thead>
+        <th>Nombre</th>
+        <th>Artista</th>
+        <th>Género</th>
+        <th>Año</th>
+    </thead>
+    <tbody *ngFor="let lista of musicaServ">
+        <tr>
+          <td>{{lista.nombre}}</td>
+          <td>{{lista.artista}}</td>
+          <td>{{lista.genero}}</td>
+          <td>{{lista.year}}</td>
+ 
+        </tr>
+    </tbody>
+</table>
+</ion-content>

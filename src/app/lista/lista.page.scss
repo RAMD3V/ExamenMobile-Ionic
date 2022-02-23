@@ -1,0 +1,18 @@
+table {
+    margin: 0px auto;
+    table-layout: fixed;
+    width: 100%;
+    border-collapse: collapse;
+    border: 3px solid rgb(11, 180, 144);
+  }
+  table th{
+    text-align: center;
+    background-color: #0873d8;
+    color: white;
+  }
+  
+  table td{
+    text-align: center;
+    width: 100%;
+    padding: 10px;
+  }
